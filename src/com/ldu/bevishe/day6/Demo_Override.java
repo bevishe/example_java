@@ -25,7 +25,7 @@ class Father {
 }
 
 class Son extends Father{
-    public Student1 method() {
-        return new Student1();
+    public Student method() {
+        return new Student();
     }
 }
