@@ -27,4 +27,15 @@ public class Student1 {
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "我的姓名是" + this.name +"，我的年龄是" +this.age;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Student1 s = (Student1)obj;
+        return (this.name.equals(s.name))&&(this.age==s.age);
+    }
 }
